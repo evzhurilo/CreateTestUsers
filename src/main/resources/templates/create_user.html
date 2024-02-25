@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Create User</title>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        form.onsubmit = function (e) {
+            e.preventDefault();
+            const username = document.querySelector('#name').value;
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value;
+            alert(`Username: ${username}\nEmail: ${email}\nPassword: ${password}`);
+            form.reset();
+        };
+    });</script>
 </head>
 <body>
 <h2>Create User</h2>
-<form action="/users/create" method="post">
+<form action="/create" method="post">
     <label for="name">Username:</label>
     <input type="text" name="name" id="name">
     <br>
