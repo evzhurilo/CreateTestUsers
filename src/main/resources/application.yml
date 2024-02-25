@@ -23,6 +23,7 @@ spring:
     show-sql: true
     generate-ddl: false
   thymeleaf:
+    cache: false
     check-template: true
     prefix: classpath:/templates/
     check-template-location: true
@@ -31,3 +32,9 @@ spring:
   docker:
     compose:
       enabled: false
+  devtools:
+    livereload:
+      enabled: true
+    
+
+    
