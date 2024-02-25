@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8000
 spring:
   h2:
     console:
@@ -23,12 +23,14 @@ spring:
     show-sql: true
     generate-ddl: false
   thymeleaf:
-    cache: false
+#    cache: false
     check-template: true
     prefix: classpath:/templates/
     check-template-location: true
     enabled: true
     suffix: .html
+    enable-spring-el-compiler: true
+
   docker:
     compose:
       enabled: false

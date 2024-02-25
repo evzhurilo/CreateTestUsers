@@ -3,7 +3,7 @@ package com.moneycat.create_test_users.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Table(name = "users")
+@Table(name = "users_moneycat")
 @Entity
 @Data
 @AllArgsConstructor
